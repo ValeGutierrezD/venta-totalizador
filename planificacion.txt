@@ -1,0 +1,27 @@
+Ingresar cantidad de items y mostrar en pantalla lo ingresado
+Ingresar el precio por item y mostrar en pantalla lo ingresado
+Mostrar el precio neto (cantidad items x precio item)
+
+
+
+
+Mostrar el porcentaje de impuesto que tiene ese estado
+Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de CA
+Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de AL
+Mostrar el precio total del impuesto según el precio neto y el porcentaje de NV
+Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de UT
+
+
+
+Mostrar el precio total con el Porcentaje de descuento que corresponde a 1000
+Mostrar el precio total con el Porcentaje de descuento que corresponde a 3000
+Mostrar el precio total con el Porcentaje de descuento que corresponde a 7000
+Mostrar el precio total con el Porcentaje de descuento que corresponde a 10000
+Mostrar el precio total con el Porcentaje de descuento que corresponde a 30000
+
+Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de TX
+
+
+Mostrar el valor del porcentaje del descuento
+Mostrar Precio total = Precio Neto+Impuesto-Descuento
+Mostrar los porcentajes con símbolo de porcentaje
