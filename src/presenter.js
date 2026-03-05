@@ -1,4 +1,4 @@
-import { MostrarPrecio } from "./venta.js";
+import { MostrarCantidad, MostrarPrecio, MostrarPrecioNeto } from "./venta.js";
 
 const cantidadInput = document.querySelector("#cantidad-items");
 const precioInput = document.querySelector("#precio-item"); // Nueva referencia
@@ -12,7 +12,6 @@ form.addEventListener("submit", (event) => {
   const precio = Number.parseFloat(precioInput.value); // Usamos Float para decimales
 
   div.innerHTML = `
-    <p>Cantidad: ${cantidad}</p>
-    <p>Precio por ítem: $${MostrarPrecio(precio)}</p>
+    <p>Precio neto: $${MostrarPrecioNeto(cantidad, precio)}</p>
   `;
 });

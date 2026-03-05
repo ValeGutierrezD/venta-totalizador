@@ -6,4 +6,8 @@ function MostrarPrecio(p) {
   return p;
 }
 
-export {MostrarCantidad, MostrarPrecio};
+function MostrarPrecioNeto(cant, precio) {
+    return cant * precio;
+}
+
+export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto};
