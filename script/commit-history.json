@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-08T23:16:53.000Z",
+      "message": "fix: venta.test.js",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 27326,
+      "additions": 4347,
+      "deletions": 22979,
+      "date": "2026-03-08"
+    },
+    "coverage": 14.29,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
