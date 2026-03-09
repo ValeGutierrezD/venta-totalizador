@@ -122,9 +122,63 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3efc10f879b80f5ce3cb8e7684b1ca992b488fbd",
     "commitName": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de TX",
     "commitTimestamp": 1773035595249,
     "testId": 7
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1773035739829,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1773065781393,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 6,
+    "numTotalTests": 29,
+    "timestamp": 1773065837152,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1773065954080,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 1,
+    "numTotalTests": 36,
+    "timestamp": 1773066233794,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1773066327314,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar presenter",
+    "commitTimestamp": 1773069175666,
+    "testId": 8
   }
 ]

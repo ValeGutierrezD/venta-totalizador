@@ -2,18 +2,89 @@
 <html xml:lang="es">
   <head>
     <title>Ventas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #e1f2fd;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+      }
+      form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #3f123b;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      #total-button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #total-button:hover {
+        background-color: #341636;
+      }
+      #total-div {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      #total-div p {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      .resultado {
+        font-weight: bold;
+        color: #27ae60;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ventas-Totalizador</h1>
+    <h1>Totalizador de Ventas</h1>
     <form id="ventas-form">
       <label for="cantidad-items">Cantidad de items:</label>
-      <input type="number" id="cantidad-items" />
+      <input type="number" id="cantidad-items" required min="1" />
+      
       <label for="precio-item">Precio por item:</label>
-      <input type="number" id="precio-item" step="0.01" /> 
-      <input type="submit" value="Total" id="total-button" />
+      <input type="number" id="precio-item" step="0.01" required min="0" />
+      
+      <label for="codigo-estado">Código de estado (CA, UT, NV, TX, AL):</label>
+      <input type="text" id="codigo-estado" maxlength="2" required pattern="[A-Za-z]{2}" placeholder="CA" />
+      
+      <input type="submit" value="Totalizar" id="total-button" />
     </form>
+    
     <div id="total-div"></div>
 
-    <script type="module" src="./src/presenter.js"></script>
+    <script type="module" src="./src/ventasPresenter.js"></script>
   </body>
 </html>

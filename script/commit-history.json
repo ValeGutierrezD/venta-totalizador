@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3efc10f879b80f5ce3cb8e7684b1ca992b488fbd",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T05:53:13.000Z",
       "message": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de TX",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/3efc10f879b80f5ce3cb8e7684b1ca992b488fbd"
     },
     "stats": {
       "total": 4,
       "additions": 4,
       "deletions": 0,
+      "date": "2026-03-09"
+    },
+    "coverage": 88.89,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-03-09T15:12:53.000Z",
+      "message": "feat: agregar presenter",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 14882,
+      "additions": 11985,
+      "deletions": 2897,
       "date": "2026-03-09"
     },
     "coverage": 88.89,
