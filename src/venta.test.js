@@ -53,4 +53,8 @@ describe("Totalizador de Ventas", () => {
     expect(CalcularPrecioTotal(60, "CA")).toBeCloseTo(64.95, 2);
   });
 
+  it("debería calcular precio total para AL: 60 + 2.40 = 62.40", () => {
+    expect(CalcularPrecioTotal(60, "AL")).toBeCloseTo(62.40, 2);
+  });
+  
 });

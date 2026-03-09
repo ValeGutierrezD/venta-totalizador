@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4f63674129d86897cdc65d24bf765efc0ec9c297",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T05:48:56.000Z",
       "message": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de CA",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/4f63674129d86897cdc65d24bf765efc0ec9c297"
     },
     "stats": {
       "total": 12,
@@ -72,6 +72,25 @@
     },
     "coverage": 88.89,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-03-09T05:50:47.000Z",
+      "message": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de AL",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-03-09"
+    },
+    "coverage": 88.89,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

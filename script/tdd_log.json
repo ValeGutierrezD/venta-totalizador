@@ -98,9 +98,15 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4f63674129d86897cdc65d24bf765efc0ec9c297",
     "commitName": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de CA",
     "commitTimestamp": 1773035337994,
     "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de AL",
+    "commitTimestamp": 1773035449102,
+    "testId": 4
   }
 ]
