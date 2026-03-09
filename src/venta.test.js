@@ -61,4 +61,7 @@ describe("Totalizador de Ventas", () => {
     expect(CalcularPrecioTotal(60, "UT")).toBeCloseTo(63.99, 2);
   });
 
+  it("debería calcular precio total para NV: 60 + 4.80 = 64.80", () => {
+    expect(CalcularPrecioTotal(60, "NV")).toBeCloseTo(64.80, 2);
+  });
 });
