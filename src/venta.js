@@ -26,7 +26,12 @@ function MostrarPorcentajeImpuesto(estado) {
     if (estado === "AL") {
         return "4.00%"; 
     }
-
 }
 
-export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto};
+function CalcularImpuesto(precioNeto, estado) {
+    const porcentajeImpuesto = MostrarPorcentajeImpuesto(estado);
+    const impuestoDecimal = parseFloat(porcentajeImpuesto) / 100;
+    return precioNeto * impuestoDecimal;
+}
+
+export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto};

@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f79923973d69e17f60db7a92d2d099aa39ab2313",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T05:32:21.000Z",
       "message": "feat: Mostrar el porcentaje de impuesto que tiene ese estado",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/f79923973d69e17f60db7a92d2d099aa39ab2313"
     },
     "stats": {
       "total": 23,
@@ -34,6 +34,25 @@
     },
     "coverage": 85.71,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-03-09T05:40:09.000Z",
+      "message": "feat: calcular impuesto",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 27,
+      "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 88.24,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

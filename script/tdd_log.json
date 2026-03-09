@@ -70,9 +70,23 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f79923973d69e17f60db7a92d2d099aa39ab2313",
     "commitName": "feat: Mostrar el porcentaje de impuesto que tiene ese estado",
     "commitTimestamp": 1773034343406,
     "testId": 1
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1773034596857,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular impuesto",
+    "commitTimestamp": 1773034811421,
+    "testId": 2
   }
 ]
