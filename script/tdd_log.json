@@ -230,9 +230,55 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6b2aae225ff2d696eeb019ca29232d7a539544cc",
     "commitName": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 1000",
     "commitTimestamp": 1773071521956,
     "testId": 9
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1773071698513,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1773071777101,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1773072280975,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1773072403076,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1773072458885,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 3000",
+    "commitTimestamp": 1773072570706,
+    "testId": 10
   }
 ]

@@ -38,9 +38,15 @@ function CalcularPrecioTotal(precioNeto, estado) {
   return precioNeto + CalcularImpuesto(precioNeto, estado);
 }
 function ObtenerPorcentajeDescuento(precioTotal) {
-  if (precioTotal <= 1000) {
-    return "0%";
+  if (precioTotal >= 3000) {
+    return "5%";
   }
+  if (precioTotal >= 1000) {
+    return "3%";
+  }
+  if (precioTotal < 1000) {
+    return "0%";
+  }  
 }
 
 export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento};

@@ -2,7 +2,8 @@ import {
   MostrarPrecioNeto, 
   MostrarPorcentajeImpuesto, 
   CalcularImpuesto, 
-  CalcularPrecioTotal 
+  CalcularPrecioTotal,
+  ObtenerPorcentajeDescuento
 } from "./venta.js";
 
 const cantidadInput = document.querySelector("#cantidad-items");
@@ -22,6 +23,10 @@ form.addEventListener("submit", (event) => {
   const porcentajeImpuesto = MostrarPorcentajeImpuesto(estado);
   const impuesto = CalcularImpuesto(precioNeto, estado);
   const precioTotal = CalcularPrecioTotal(precioNeto, estado);
+  const descuento = ObtenerPorcentajeDescuento(precioTotal);
+  // calcular total después del descuento (siempre que sea un porcentaje válido)
+  const descuentoDecimal = parseFloat(descuento) / 100;
+  const totalConDescuento = precioTotal * (1 - descuentoDecimal);
 
   div.innerHTML = `
     <p><strong>Cantidad de items:</strong> ${cantidad}</p>
@@ -30,7 +35,8 @@ form.addEventListener("submit", (event) => {
     <hr>
     <p><strong>Precio neto (${cantidad} × $${precio.toFixed(2)}):</strong> $${precioNeto.toFixed(2)}</p>
     <p><strong>Impuesto para ${estado} (${porcentajeImpuesto}):</strong> $${impuesto.toFixed(2)}</p>
-    <p><strong>Descuento aplicado:</strong> ($0.00)</p>
+    <p><strong>Descuento aplicado:</strong> ${descuento}</p>
     <p class="resultado"><strong>Precio total (+impuesto):</strong> $${precioTotal.toFixed(2)}</p>
+    <p class="resultado"><strong>Precio final (-descuento):</strong> $${totalConDescuento.toFixed(2)}</p>
   `;
 });

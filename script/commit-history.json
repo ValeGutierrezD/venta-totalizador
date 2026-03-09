@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6b2aae225ff2d696eeb019ca29232d7a539544cc",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T15:52:00.000Z",
       "message": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 1000",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/6b2aae225ff2d696eeb019ca29232d7a539544cc"
     },
     "stats": {
       "total": 20,
@@ -186,6 +186,25 @@
     },
     "coverage": 90,
     "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-03-09T16:09:29.000Z",
+      "message": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 3000",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 22,
+      "deletions": 4,
+      "date": "2026-03-09"
+    },
+    "coverage": 91.67,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }
