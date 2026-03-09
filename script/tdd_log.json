@@ -176,9 +176,63 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "03ccd2f281b15a88a9a3d94aedd596f325b60ceb",
     "commitName": "feat: agregar presenter",
     "commitTimestamp": 1773069175666,
     "testId": 8
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1773069555800,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1773069662876,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1773069712246,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1773069794860,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1773070504528,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1773071239950,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 1000",
+    "commitTimestamp": 1773071521956,
+    "testId": 9
   }
 ]

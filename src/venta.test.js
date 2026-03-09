@@ -1,5 +1,5 @@
-import { MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal } from "./venta.js";
-
+import { 
+  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento} from "./venta.js";
 describe("Totalizador de Ventas", () => {
   
   it("debería calcular el total bruto multiplicando cantidad y precio", () => {
@@ -48,7 +48,7 @@ describe("Totalizador de Ventas", () => {
     expect(CalcularImpuesto(60, "AL")).toBeCloseTo(2.40, 2);
   });
 
-  // Prueba para CalcularPrecioTotal
+  // Prueba para CalcularPrecioTotal con impuesto
   it("debería calcular precio total para CA: 60 + 4.95 = 64.95", () => {
     expect(CalcularPrecioTotal(60, "CA")).toBeCloseTo(64.95, 2);
   });
@@ -68,4 +68,10 @@ describe("Totalizador de Ventas", () => {
   it("debería calcular precio total para TX: 60 + 3.75 = 63.75", () => {
     expect(CalcularPrecioTotal(60, "TX")).toBeCloseTo(63.75, 2);
   });
+
+  //pruebas para calcular descuentos
+  it("debería retornar 0% de descuento para montos menores a 1000", () => {
+    expect(ObtenerPorcentajeDescuento(999)).toEqual("0%");
+  });
+
 });
