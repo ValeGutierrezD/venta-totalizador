@@ -84,9 +84,23 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "67617a0e9b0255b62d94dbdebebc55ea4eb8c7dd",
     "commitName": "feat: calcular impuesto",
     "commitTimestamp": 1773034811421,
     "testId": 2
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1773035254291,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de CA",
+    "commitTimestamp": 1773035337994,
+    "testId": 3
   }
 ]

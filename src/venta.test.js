@@ -47,4 +47,10 @@ describe("Totalizador de Ventas", () => {
   it("debería calcular impuesto de AL: 60 * 4.00% = 2.40", () => {
     expect(CalcularImpuesto(60, "AL")).toBeCloseTo(2.40, 2);
   });
+
+  // Prueba para CalcularPrecioTotal
+  it("debería calcular precio total para CA: 60 + 4.95 = 64.95", () => {
+    expect(CalcularPrecioTotal(60, "CA")).toBeCloseTo(64.95, 2);
+  });
+
 });

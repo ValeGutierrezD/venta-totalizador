@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "67617a0e9b0255b62d94dbdebebc55ea4eb8c7dd",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T05:40:09.000Z",
       "message": "feat: calcular impuesto",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/67617a0e9b0255b62d94dbdebebc55ea4eb8c7dd"
     },
     "stats": {
       "total": 28,
@@ -53,6 +53,25 @@
     },
     "coverage": 88.24,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-03-09T05:48:56.000Z",
+      "message": "Mostrar el precio total con el valor del impuesto según el precio neto y el porcentaje de CA",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 88.89,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

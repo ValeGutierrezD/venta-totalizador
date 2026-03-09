@@ -34,4 +34,8 @@ function CalcularImpuesto(precioNeto, estado) {
     return precioNeto * impuestoDecimal;
 }
 
-export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto};
+function CalcularPrecioTotal(precioNeto, estado) {
+  return precioNeto + CalcularImpuesto(precioNeto, estado);
+}
+
+export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal};
