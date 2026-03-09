@@ -79,5 +79,8 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 5% de descuento para montos >= 3000", () => {
     expect(ObtenerPorcentajeDescuento(3001)).toEqual("5%");
   });
+  it("debería retornar 7% de descuento para montos >= 7000", () => {
+    expect(ObtenerPorcentajeDescuento(7000)).toEqual("7%");
+  });
 
 });
