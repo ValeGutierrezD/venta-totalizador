@@ -24,9 +24,55 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "758a22a743515decd2218cc106a4d519ba36eac3",
     "commitName": "fix: venta.test.js",
     "commitTimestamp": 1773011815226,
     "testId": 0
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1773032580537,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1773033920383,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 5,
+    "numTotalTests": 7,
+    "timestamp": 1773033991874,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 5,
+    "numTotalTests": 7,
+    "timestamp": 1773034108851,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1773034225837,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar el porcentaje de impuesto que tiene ese estado",
+    "commitTimestamp": 1773034343406,
+    "testId": 1
   }
 ]
