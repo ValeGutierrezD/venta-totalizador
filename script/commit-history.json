@@ -266,17 +266,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "638a556627ced343c21a4440cd6ec4a9ead3c7ce",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T00:38:55.000Z",
       "message": "feat: selector en lista de estados",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/638a556627ced343c21a4440cd6ec4a9ead3c7ce"
     },
     "stats": {
       "total": 12,
       "additions": 9,
       "deletions": 3,
+      "date": "2026-03-10"
+    },
+    "coverage": 93.33,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T00:42:53.000Z",
+      "message": "style: mejora de lista de estados",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
       "date": "2026-03-10"
     },
     "coverage": 93.33,

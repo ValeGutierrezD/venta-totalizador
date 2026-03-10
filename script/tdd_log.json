@@ -324,9 +324,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "638a556627ced343c21a4440cd6ec4a9ead3c7ce",
     "commitName": "feat: selector en lista de estados",
     "commitTimestamp": 1773103139599,
     "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: mejora de lista de estados",
+    "commitTimestamp": 1773103377005,
+    "testId": 15
   }
 ]
