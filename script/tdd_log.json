@@ -508,9 +508,23 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69439548b92383d7d05b29439f9b6d88ea6a19e7",
     "commitName": "feat: Mostrar costo de envio 41-80",
     "commitTimestamp": 1773106110122,
     "testId": 26
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1773106154040,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar costo de envio 81-100",
+    "commitTimestamp": 1773106175301,
+    "testId": 27
   }
 ]
