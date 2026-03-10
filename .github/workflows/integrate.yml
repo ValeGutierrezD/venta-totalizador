@@ -5,12 +5,12 @@ on:
     branches: [main]
   pull_request:
     branches: [main, master]
-    
+
 permissions: write-all
 
 jobs:
   ci_to_main:
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
     steps:
       - uses: actions/checkout@v4
       - name: Set up node.js
