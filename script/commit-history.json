@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "181f1f9f65d3b017f1cffd1881dfb666eb8c36e3",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:14:32.000Z",
       "message": "feat: Mostrar impuesto para varios",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/181f1f9f65d3b017f1cffd1881dfb666eb8c36e3"
     },
     "stats": {
       "total": 3,
@@ -433,6 +433,25 @@
     },
     "coverage": 95.45,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:23:38.000Z",
+      "message": "feat: Mostrar costo de envio 0-10",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 30,
+      "deletions": 2,
+      "date": "2026-03-10"
+    },
+    "coverage": 75.86,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

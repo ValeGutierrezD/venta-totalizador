@@ -1,5 +1,5 @@
 import { 
-  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria} from "./venta.js";
+  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase} from "./venta.js";
 describe("Totalizador de Ventas", () => {
   
   it("debería calcular el total bruto multiplicando cantidad y precio", () => {
@@ -110,5 +110,10 @@ describe("Totalizador de Ventas", () => {
   });
   it("debería retornar 0% de impuesto adicional para varios", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Varios")).toEqual("0");
+  });
+
+  // pruebas para calcular costo de envío
+  it("debería costar $0 para un peso de 5", () => {
+    expect(calcularCostoEnvioBase(5)).toEqual(0);
   });
 });

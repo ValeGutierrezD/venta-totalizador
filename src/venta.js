@@ -83,5 +83,28 @@ function ObtenerImpuestoAdicionalPorCategoria(categoria) {
   }
 }
 
+function calcularCostoEnvioBase(peso) {
+  if (peso >= 0 &&peso <= 10) {
+    return 0;
+  }
+  if (peso >= 11 && peso <= 20) {
+    return 3.5;
+  }
+  if (peso >= 21 && peso <= 40) {
+    return 5;
+  }
+  if (peso >= 41 && peso <= 80) {
+    return 6;
+  }
+  if (peso >= 81 && peso <= 100) {
+    return 6.5;
+  }
+  if (peso >= 101 && peso <= 200) {
+    return 8;
+  }
+  if (peso > 200) {
+    return 9;
+  }   
+}
 
-export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria};
+export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase};

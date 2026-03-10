@@ -444,9 +444,31 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "181f1f9f65d3b017f1cffd1881dfb666eb8c36e3",
     "commitName": "feat: Mostrar impuesto para varios",
     "commitTimestamp": 1773105276028,
     "testId": 22
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1773105713777,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1773105749635,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar costo de envio 0-10",
+    "commitTimestamp": 1773105822036,
+    "testId": 23
   }
 ]
