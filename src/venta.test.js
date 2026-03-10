@@ -1,5 +1,6 @@
 import { 
-  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecio, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase, ObtenerDescuentoCliente} from "./venta.js";
+  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecio, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase, ObtenerDescuentoCliente, ObtenerDescuentoEspecialCliente} from "./venta.js";
+
 describe("Totalizador de Ventas", () => {
   
   it("debería calcular el total bruto multiplicando cantidad y precio", () => {
@@ -147,5 +148,14 @@ describe("Totalizador de Ventas", () => {
   });
   it("debería retornar 1.5% de descuento para cliente especial", () => {
     expect(ObtenerDescuentoCliente("Especial")).toEqual(0.015);
+  });
+
+  // pruebas para descuento especial cliente
+  it("debería aplicar $100 de descuento para cliente recurrente con alimentos y monto mayor a 3000", () => {
+    expect(ObtenerDescuentoEspecialCliente("Recurrente", "Alimentos", 3500)).toEqual(100);
+  });
+
+  it("debería aplicar $200 de descuento para cliente especial con electronicos y monto mayor a 4000", () => {
+    expect(ObtenerDescuentoEspecialCliente("Especial", "Electronicos", 4500)).toEqual(200);
   });
 });

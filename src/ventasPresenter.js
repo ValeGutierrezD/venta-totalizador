@@ -83,7 +83,7 @@ btnFinal.addEventListener("click", () => {
     <p><strong>Tipo de cliente:</strong> ${cliente}</p>
     <p><strong>Impuesto categoría:</strong> $${resultado.impCategoria.toFixed(2)}</p>
     <p><strong>Costo envío:</strong> $${resultado.envio.toFixed(2)}</p>
-     <p><strong>Envío con descuento cliente:</strong> $${envioFinal.toFixed(2)}</p>
+    <p><strong>Envío con descuento cliente:</strong> $${envioFinal.toFixed(2)}</p>
     <h2>TOTAL FINAL: $${totalFinal.toFixed(2)}</h2>
     
   `;

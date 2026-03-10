@@ -163,3 +163,13 @@ export function calcularEnvioConDescuento(envioBase, tipoCliente) {
   return envioBase - (envioBase * descuento);
 }
 
+export function ObtenerDescuentoEspecialCliente(cliente, categoria, precio) {
+  if (cliente === "Recurrente" && categoria === "Alimentos" && precio > 3000) {
+    return 100;
+  }
+  if (cliente === "Especial" && categoria === "Electronicos" && precio > 4000) {
+    return 200;
+  }
+  return 0;
+}
+

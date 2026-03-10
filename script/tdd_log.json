@@ -662,9 +662,39 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "26054c57f59b803ae5b76d71da0164efaa01edd6",
     "commitName": "feat: mostrar descuentos por tipo de cliente",
     "commitTimestamp": 1773123820049,
     "testId": 37
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 1,
+    "numTotalTests": 42,
+    "timestamp": 1773124365164,
+    "success": false,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1773124479473,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1773124939588,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar descuentos especial cliente especial",
+    "commitTimestamp": 1773124982211,
+    "testId": 38
   }
 ]
