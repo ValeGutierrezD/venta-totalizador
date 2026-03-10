@@ -5,7 +5,9 @@ import {
   CalcularPrecio,
   ObtenerPorcentajeDescuento,
   ProcesarVentaCompleta,
-  CalcularPrecioConDescuento
+  CalcularPrecioConDescuento,
+  calcularCostoEnvioBase,
+  calcularEnvioConDescuento
 } from "./venta.js";
 
 const cantidadInput = document.querySelector("#cantidad-items");
@@ -13,6 +15,7 @@ const precioInput = document.querySelector("#precio-item");
 const estadoInput = document.querySelector("#codigo-estado");
 const categoriaInput = document.querySelector("#categoria-producto");
 const pesoInput = document.querySelector("#peso-volumetrico");
+const clienteInput = document.querySelector("#tipo-cliente");
 
 const btnCalcular = document.querySelector("#btn-calcular");
 const btnFinal = document.querySelector("#btn-total-final");
@@ -45,6 +48,8 @@ btnCalcular.addEventListener("click", () => {
   const descuento = ObtenerPorcentajeDescuento(precioTotal);
   const totalConDescuento = CalcularPrecioConDescuento(precioTotal, descuento);
 
+  
+
   div_1.innerHTML = `
     <p><strong>Cantidad de items:</strong> ${cantidad}</p>
     <p><strong>Precio por item:</strong> $${precio.toFixed(2)}</p>
@@ -64,14 +69,22 @@ btnCalcular.addEventListener("click", () => {
 btnFinal.addEventListener("click", () => {
 
   const { cantidad, precio, estado, categoria, peso } = obtenerDatosFormulario();
+  const cliente = clienteInput.value;
+
+  const envioBase = calcularCostoEnvioBase(peso);
+  const envioFinal = calcularEnvioConDescuento(envioBase, cliente);
 
   const resultado = ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso);
+  const totalFinal = resultado.totalFinal - envioBase + envioFinal;
 
   div_1.innerHTML += `
     <hr>
     <p><strong>Categoría:</strong> ${categoria}</p>
+    <p><strong>Tipo de cliente:</strong> ${cliente}</p>
     <p><strong>Impuesto categoría:</strong> $${resultado.impCategoria.toFixed(2)}</p>
     <p><strong>Costo envío:</strong> $${resultado.envio.toFixed(2)}</p>
-    <h2>TOTAL FINAL: $${resultado.totalFinal.toFixed(2)}</h2>
+     <p><strong>Envío con descuento cliente:</strong> $${envioFinal.toFixed(2)}</p>
+    <h2>TOTAL FINAL: $${totalFinal.toFixed(2)}</h2>
+    
   `;
 });

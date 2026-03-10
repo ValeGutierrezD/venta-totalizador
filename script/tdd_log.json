@@ -656,9 +656,15 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8f9bdb40d76f65b8ac06ab589eadbeb19fa93fde",
     "commitName": "feat: mostrar descuento por cliente especial",
     "commitTimestamp": 1773122753067,
     "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar descuentos por tipo de cliente",
+    "commitTimestamp": 1773123820049,
+    "testId": 37
   }
 ]

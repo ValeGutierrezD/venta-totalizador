@@ -158,3 +158,8 @@ export function ObtenerDescuentoCliente(tipoCliente) {
   if(tipoCliente === "Especial") return 0.015;
 }
 
+export function calcularEnvioConDescuento(envioBase, tipoCliente) {
+  const descuento = ObtenerDescuentoCliente(tipoCliente);
+  return envioBase - (envioBase * descuento);
+}
+
