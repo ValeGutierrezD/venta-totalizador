@@ -108,4 +108,7 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 0% de impuesto adicional para vestimenta", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Vestimenta")).toEqual("0.02");
   });
+  it("debería retornar 0% de impuesto adicional para varios", () => {
+    expect(ObtenerImpuestoAdicionalPorCategoria("Varios")).toEqual("0");
+  });
 });

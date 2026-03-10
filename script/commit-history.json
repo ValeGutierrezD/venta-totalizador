@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fad83fce846cbadf7d9cd4996678e59500694d3b",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:13:17.000Z",
       "message": "feat: Mostrar impuesto para vestimenta",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/fad83fce846cbadf7d9cd4996678e59500694d3b"
     },
     "stats": {
       "total": 3,
@@ -414,6 +414,25 @@
     },
     "coverage": 90.91,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:14:32.000Z",
+      "message": "feat: Mostrar impuesto para varios",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 95.45,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

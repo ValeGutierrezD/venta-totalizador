@@ -430,9 +430,23 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fad83fce846cbadf7d9cd4996678e59500694d3b",
     "commitName": "feat: Mostrar impuesto para vestimenta",
     "commitTimestamp": 1773105200369,
     "testId": 21
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1773105253304,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para varios",
+    "commitTimestamp": 1773105276028,
+    "testId": 22
   }
 ]
