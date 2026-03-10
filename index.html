@@ -77,6 +77,20 @@
       
       <label for="precio-item">Precio por item:</label>
       <input type="number" id="precio-item" step="0.01" required min="0" />
+
+      <label for="categoria-producto">Categoría de producto:</label>
+      <select id="categoria-producto">
+        <option value="Alimentos">Alimentos</option>
+        <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
+        <option value="Material de escritorio">Material de escritorio</option>
+        <option value="Muebles">Muebles</option>
+        <option value="Electrónicos">Electrónicos</option>
+        <option value="Vestimenta">Vestimenta</option>
+        <option value="Varios" selected>Varios</option>
+      </select>
+
+      <label for="peso-volumetrico">Peso volumétrico por unidad:</label>
+      <input type="number" id="peso-volumetrico" step="0.1" value="0" required min="0" />
       
       <label for="codigo-estado">Código de estado:</label>
       <select id="codigo-estado">

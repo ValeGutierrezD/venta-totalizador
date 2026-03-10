@@ -550,9 +550,15 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6f7dd0dc65b2ce705b040db74a489a605c2b0ade",
     "commitName": "feat: Mostrar costo de envio >200",
     "commitTimestamp": 1773106274392,
     "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar funcion impuesto por categoria",
+    "commitTimestamp": 1773116063655,
+    "testId": 30
   }
 ]
