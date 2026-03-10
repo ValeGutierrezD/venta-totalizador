@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2977c25cbde113e6f93226410a30673d80e9ca72",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T07:20:50.000Z",
       "message": "fix: arreglar el evento de boton final",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/2977c25cbde113e6f93226410a30673d80e9ca72"
     },
     "stats": {
       "total": 27,
@@ -755,6 +755,25 @@
       "date": "2026-03-10"
     },
     "coverage": 75,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T07:23:10.000Z",
+      "message": "refac: funcion Procesar venta completa",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 31,
+      "deletions": 25,
+      "date": "2026-03-10"
+    },
+    "coverage": 73.4,
     "test_count": 45,
     "failed_tests": 0,
     "conclusion": "success"

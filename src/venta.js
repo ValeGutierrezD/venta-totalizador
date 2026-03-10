@@ -126,32 +126,38 @@ export function CalcularMontoEnvioTotal(peso, cantidad) {
   return costoUnitario * cantidad;
 }
 
-// Nueva función maestra que orquestará todo el detalle
-export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso, cliente) {
-    const neto = MostrarPrecioNeto(cantidad, precio);
-    const impEstado = CalcularImpuesto(neto, estado);
-    const impCategoria = CalcularMontoImpuestoCategoria(neto, categoria);
-    
-    const subtotalConImpuestos = neto + impEstado + impCategoria;
-    
-    const porcentajeDesc = ObtenerPorcentajeDescuento(subtotalConImpuestos);
-    const montoDesc = subtotalConImpuestos * (parseFloat(porcentajeDesc) / 100);
-    
-    const envio = CalcularMontoEnvioTotal(peso, cantidad);
-    const descuentoEspecial = ObtenerDescuentoEspecialCliente(cliente, categoria, neto);
-    const totalFinal = subtotalConImpuestos - montoDesc + envio - descuentoEspecial;
 
-    
-    return {
-        neto: neto,
-        impEstado: impEstado,
-        impCategoria: impCategoria,
-        porcentajeDesc: porcentajeDesc,
-        montoDesc: montoDesc,
-        envio: envio,
-        descuentoEspecial: descuentoEspecial,
-        totalFinal: totalFinal
-    };
+export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso, cliente) {
+
+  const neto = MostrarPrecioNeto(cantidad, precio);
+
+  const impEstado = CalcularImpuesto(neto, estado);
+  const impCategoria = CalcularMontoImpuestoCategoria(neto, categoria);
+
+  const subtotal = neto + impEstado + impCategoria;
+
+  const porcentajeDesc = ObtenerPorcentajeDescuento(subtotal);
+  const montoDesc = subtotal * (parseFloat(porcentajeDesc) / 100);
+
+  const envioBase = calcularCostoEnvioBase(peso);
+  const envio = envioBase * cantidad;
+
+  const envioConDescuento = calcularEnvioConDescuento(envioBase, cliente) * cantidad;
+
+  const descuentoEspecial = ObtenerDescuentoEspecialCliente(cliente, categoria, neto);
+
+  const totalFinal = subtotal - montoDesc + envioConDescuento - descuentoEspecial;
+
+  return {
+    neto: neto,
+    impEstado: impEstado,
+    impCategoria: impCategoria,
+    porcentajeDesc: porcentajeDesc,
+    montoDesc: montoDesc,
+    envio: envioConDescuento,
+    descuentoEspecial: descuentoEspecial,
+    totalFinal: totalFinal
+  };
 }
 
 export function ObtenerDescuentoCliente(tipoCliente) {
