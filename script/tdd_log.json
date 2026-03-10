@@ -318,9 +318,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bc69709876743abbb18c338b04d92fdd361acf1c",
     "commitName": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 30000",
     "commitTimestamp": 1773073238372,
     "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: selector en lista de estados",
+    "commitTimestamp": 1773103139599,
+    "testId": 14
   }
 ]

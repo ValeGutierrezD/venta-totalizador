@@ -247,18 +247,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bc69709876743abbb18c338b04d92fdd361acf1c",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-03-09T16:20:36.000Z",
       "message": "feat: Mostrar el precio total con el Porcentaje de descuento que corresponde a 30000",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/bc69709876743abbb18c338b04d92fdd361acf1c"
     },
     "stats": {
       "total": 6,
       "additions": 6,
       "deletions": 0,
       "date": "2026-03-09"
+    },
+    "coverage": 93.33,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T00:38:55.000Z",
+      "message": "feat: selector en lista de estados",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 9,
+      "deletions": 3,
+      "date": "2026-03-10"
     },
     "coverage": 93.33,
     "test_count": 23,

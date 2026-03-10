@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
 
   const cantidad = Number.parseInt(cantidadInput.value);
   const precio = Number.parseFloat(precioInput.value);
-  const estado = estadoInput.value.toUpperCase();
+  const estado = estadoInput.value;
 
   const precioNeto = MostrarPrecioNeto(cantidad, precio);
   const porcentajeImpuesto = MostrarPorcentajeImpuesto(estado);
