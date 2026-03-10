@@ -562,9 +562,15 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7cd29c4df451861151524480e49b6400387811c5",
     "commitName": "feat: Mostrar funcion costo de envio",
     "commitTimestamp": 1773121132916,
     "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refac: ventasPresenter",
+    "commitTimestamp": 1773121362471,
+    "testId": 32
   }
 ]

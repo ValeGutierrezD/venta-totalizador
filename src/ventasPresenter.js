@@ -20,12 +20,22 @@ const btnFinal = document.querySelector("#btn-total-final");
 const div_1 = document.querySelector("#total-div");
 
 
+// Función para obtener los datos del formulario
+function obtenerDatosFormulario() {
+  return {
+    cantidad: Number.parseInt(cantidadInput.value),
+    precio: Number.parseFloat(precioInput.value),
+    estado: estadoInput.value,
+    categoria: categoriaInput.value,
+    peso: Number.parseFloat(pesoInput.value)
+  };
+}
+
+
 // BOTÓN 1: calcular precio base
 btnCalcular.addEventListener("click", () => {
 
-  const cantidad = Number.parseInt(cantidadInput.value);
-  const precio = Number.parseFloat(precioInput.value);
-  const estado = estadoInput.value;
+  const { cantidad, precio, estado } = obtenerDatosFormulario();
 
   const precioNeto = MostrarPrecioNeto(cantidad, precio);
   const porcentajeImpuesto = MostrarPorcentajeImpuesto(estado);
@@ -34,18 +44,18 @@ btnCalcular.addEventListener("click", () => {
   const precioTotal = CalcularPrecio(precioNeto, estado);
   const descuento = ObtenerPorcentajeDescuento(precioTotal);
   const totalConDescuento = CalcularPrecioConDescuento(precioTotal, descuento);
-  
+
   div_1.innerHTML = `
     <p><strong>Cantidad de items:</strong> ${cantidad}</p>
     <p><strong>Precio por item:</strong> $${precio.toFixed(2)}</p>
     <p><strong>Código de estado:</strong> ${estado}</p>
     <hr>
-    <p><strong>Precio neto:</strong> $${precioNeto.toFixed(2)}</p>
-    <p><strong>Impuesto por estado (${porcentajeImpuesto}):</strong> $${impuesto.toFixed(2)}</p>
+    <p><strong>Precio neto (${cantidad} × $${precio.toFixed(2)}):</strong> $${precioNeto.toFixed(2)}</p>
+    <p><strong>Impuesto por estado (${estado} - ${porcentajeImpuesto}):</strong> $${impuesto.toFixed(2)}</p>
     <p><strong>Descuento por monto:</strong> ${descuento}</p>
-  
+
     <p class="resultado"><strong>Precio total (+impuesto):</strong> $${precioTotal.toFixed(2)}</p>
-    <p class="resultado"><strong>Precio final con descuento :</strong> $${totalConDescuento.toFixed(2)}</p>
+    <p class="resultado"><strong>Precio final con descuento:</strong> $${totalConDescuento.toFixed(2)}</p>
   `;
 });
 
@@ -53,11 +63,7 @@ btnCalcular.addEventListener("click", () => {
 // BOTÓN 2: calcular precio final
 btnFinal.addEventListener("click", () => {
 
-  const cantidad = Number.parseInt(cantidadInput.value);
-  const precio = Number.parseFloat(precioInput.value);
-  const estado = estadoInput.value;
-  const categoria = categoriaInput.value;
-  const peso = Number.parseFloat(pesoInput.value);
+  const { cantidad, precio, estado, categoria, peso } = obtenerDatosFormulario();
 
   const resultado = ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso);
 
