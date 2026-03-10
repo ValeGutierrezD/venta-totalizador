@@ -1,16 +1,16 @@
-function MostrarCantidad(a) {
+export function MostrarCantidad(a) {
   return a
 }
 
-function MostrarPrecio(p) {
+export function MostrarPrecio(p) {
   return p;
 }
 
-function MostrarPrecioNeto(cant, precio) {
+export function MostrarPrecioNeto(cant, precio) {
     return cant * precio;
 }
 
-function MostrarPorcentajeImpuesto(estado) {
+export function MostrarPorcentajeImpuesto(estado) {
     if (estado === "CA") {
         return "8.25%"; // 8.25% de impuesto para estado CA
     }
@@ -28,17 +28,17 @@ function MostrarPorcentajeImpuesto(estado) {
     }
 }
 
-function CalcularImpuesto(precioNeto, estado) {
+export function CalcularImpuesto(precioNeto, estado) {
     const porcentajeImpuesto = MostrarPorcentajeImpuesto(estado);
     const impuestoDecimal = parseFloat(porcentajeImpuesto) / 100;
     return precioNeto * impuestoDecimal;
 }
 
-function CalcularPrecioTotal(precioNeto, estado) {
+export function CalcularPrecio(precioNeto, estado) {
   return precioNeto + CalcularImpuesto(precioNeto, estado);
 }
 
-function ObtenerPorcentajeDescuento(precioTotal) {
+export function ObtenerPorcentajeDescuento(precioTotal) {
   if (precioTotal >= 30000) {
     return "15%";
   }
@@ -59,7 +59,12 @@ function ObtenerPorcentajeDescuento(precioTotal) {
   }  
 }
 
-function ObtenerImpuestoAdicionalPorCategoria(categoria) {
+export function CalcularPrecioConDescuento(precioTotal, porcentajeDescuento) {
+  const descuentoDecimal = parseFloat(porcentajeDescuento) / 100;
+  return precioTotal * (1 - descuentoDecimal);
+}
+
+export function ObtenerImpuestoAdicionalPorCategoria(categoria) {
   if (categoria === "Alimentos") {
     return "0"; 
   }
@@ -84,7 +89,7 @@ function ObtenerImpuestoAdicionalPorCategoria(categoria) {
   return "0"; // Por defecto, si no se reconoce la categoría, no se aplica impuesto adicional
 }
 
-function calcularCostoEnvioBase(peso) {
+export function calcularCostoEnvioBase(peso) {
   if (peso >= 0 && peso <= 10) {
     return 0;
   }
@@ -110,19 +115,19 @@ function calcularCostoEnvioBase(peso) {
 }
 
 // Calcula el monto de dinero del impuesto por categoría
-function CalcularMontoImpuestoCategoria(precioNeto, categoria) {
+export function CalcularMontoImpuestoCategoria(precioNeto, categoria) {
   const porcentaje = parseFloat(ObtenerImpuestoAdicionalPorCategoria(categoria));
   return precioNeto * porcentaje;
 }
 
 // Calcula el costo total de envío (Costo unitario x cantidad)
-function CalcularMontoEnvioTotal(peso, cantidad) {
+export function CalcularMontoEnvioTotal(peso, cantidad) {
   const costoUnitario = calcularCostoEnvioBase(peso);
   return costoUnitario * cantidad;
 }
 
 // Nueva función maestra que orquestará todo el detalle
-function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso) {
+export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso) {
     const neto = MostrarPrecioNeto(cantidad, precio);
     const impEstado = CalcularImpuesto(neto, estado);
     const impCategoria = CalcularMontoImpuestoCategoria(neto, categoria);
@@ -146,4 +151,3 @@ function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso) {
     };
 }
 
-export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase, CalcularMontoImpuestoCategoria, CalcularMontoEnvioTotal, ProcesarVentaCompleta};

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xml:lang="es">
+<html lang="es">
   <head>
     <title>Ventas</title>
     <style>
@@ -36,11 +36,10 @@
         font-size: 16px;
         background-color: white;
       }
-      #total-button {
+      button {
         width: 100%;
         padding: 12px;
         margin-top: 20px;
-        background-color: #3498db;
         color: white;
         border: none;
         border-radius: 4px;
@@ -48,8 +47,19 @@
         font-size: 18px;
         font-weight: bold;
       }
-      #total-button:hover {
-        background-color: #341636;
+
+      /* Botón calcular precio */
+      #btn-calcular {
+        background-color: #3498db;
+      }
+
+      /* Botón precio final */
+      #btn-total-final {
+        background-color: #27ae60;
+      }
+
+      button:hover {
+        opacity: 0.9;
       }
       #total-div {
         background-color: white;
@@ -77,20 +87,6 @@
       
       <label for="precio-item">Precio por item:</label>
       <input type="number" id="precio-item" step="0.01" required min="0" />
-
-      <label for="categoria-producto">Categoría de producto:</label>
-      <select id="categoria-producto">
-        <option value="Alimentos">Alimentos</option>
-        <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
-        <option value="Material de escritorio">Material de escritorio</option>
-        <option value="Muebles">Muebles</option>
-        <option value="Electrónicos">Electrónicos</option>
-        <option value="Vestimenta">Vestimenta</option>
-        <option value="Varios" selected>Varios</option>
-      </select>
-
-      <label for="peso-volumetrico">Peso volumétrico por unidad:</label>
-      <input type="number" id="peso-volumetrico" step="0.1" value="0" required min="0" />
       
       <label for="codigo-estado">Código de estado:</label>
       <select id="codigo-estado">
@@ -100,8 +96,26 @@
         <option value="TX">Texas (TX)</option>
         <option value="UT">Utah (UT)</option>
       </select>
+      <button type="button" id="btn-calcular">Calcular precio</button>
       
-      <input type="submit" value="Totalizar" id="total-button" />
+      <hr>
+      
+      <label>Categoría de producto</label>
+      <select id="categoria-producto">
+        <option value="Alimentos">Alimentos</option>
+          <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
+          <option value="Material de escritorio">Material de escritorio</option>
+          <option value="Muebles">Muebles</option>
+          <option value="Electrónicos">Electrónicos</option>
+          <option value="Vestimenta">Vestimenta</option>
+          <option value="Varios" selected>Varios</option>
+      </select>
+
+      <label>Peso volumétrico</label>
+      <input type="number" id="peso-volumetrico">
+
+      <button type="button" id="btn-total-final">Calcular precio final</button>
+
     </form>
     
     <div id="total-div"></div>

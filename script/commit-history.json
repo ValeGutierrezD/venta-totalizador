@@ -570,12 +570,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "436de4c9f99b5d7061d3fe007c870a2eb2372800",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T04:14:19.000Z",
       "message": "feat: Mostrar funcion impuesto por categoria",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/436de4c9f99b5d7061d3fe007c870a2eb2372800"
     },
     "stats": {
       "total": 81,
@@ -586,6 +586,25 @@
     "coverage": 75.34,
     "test_count": 37,
     "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T05:38:49.000Z",
+      "message": "feat: Mostrar funcion costo de envio",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 149,
+      "additions": 91,
+      "deletions": 58,
+      "date": "2026-03-10"
+    },
+    "coverage": 72,
+    "test_count": 37,
+    "failed_tests": 7,
     "conclusion": "failure"
   }
 ]
