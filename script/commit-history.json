@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3067abe437a81b769e014464888bf40fb35e0ac3",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T06:04:30.000Z",
       "message": "feat: mostrar descuento por cliente antiguo recurrente",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/3067abe437a81b769e014464888bf40fb35e0ac3"
     },
     "stats": {
       "total": 3,
@@ -680,6 +680,25 @@
     },
     "coverage": 74.7,
     "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T06:05:49.000Z",
+      "message": "feat: mostrar descuento por cliente especial",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 77.11,
+    "test_count": 41,
     "failed_tests": 0,
     "conclusion": "success"
   }
