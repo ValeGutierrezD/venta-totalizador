@@ -692,9 +692,31 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0afc4d558338c101c29e3f63fdd8684ef6df2588",
     "commitName": "feat: mostrar descuentos especial cliente especial",
     "commitTimestamp": 1773124982211,
     "testId": 38
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1773125038548,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1773125312712,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: arreglar el evento de boton final",
+    "commitTimestamp": 1773127254036,
+    "testId": 39
   }
 ]

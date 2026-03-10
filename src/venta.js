@@ -127,7 +127,7 @@ export function CalcularMontoEnvioTotal(peso, cantidad) {
 }
 
 // Nueva función maestra que orquestará todo el detalle
-export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso) {
+export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso, cliente) {
     const neto = MostrarPrecioNeto(cantidad, precio);
     const impEstado = CalcularImpuesto(neto, estado);
     const impCategoria = CalcularMontoImpuestoCategoria(neto, categoria);
@@ -138,8 +138,10 @@ export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso)
     const montoDesc = subtotalConImpuestos * (parseFloat(porcentajeDesc) / 100);
     
     const envio = CalcularMontoEnvioTotal(peso, cantidad);
-    const totalFinal = subtotalConImpuestos - montoDesc + envio;
+    const descuentoEspecial = ObtenerDescuentoEspecialCliente(cliente, categoria, neto);
+    const totalFinal = subtotalConImpuestos - montoDesc + envio - descuentoEspecial;
 
+    
     return {
         neto: neto,
         impEstado: impEstado,
@@ -147,6 +149,7 @@ export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso)
         porcentajeDesc: porcentajeDesc,
         montoDesc: montoDesc,
         envio: envio,
+        descuentoEspecial: descuentoEspecial,
         totalFinal: totalFinal
     };
 }
@@ -156,6 +159,8 @@ export function ObtenerDescuentoCliente(tipoCliente) {
   if(tipoCliente === "Recurrente") return 0.005;
   if(tipoCliente === "Antiguo Recurrente") return 0.01;
   if(tipoCliente === "Especial") return 0.015;
+
+  return 0;
 }
 
 export function calcularEnvioConDescuento(envioBase, tipoCliente) {
@@ -167,7 +172,7 @@ export function ObtenerDescuentoEspecialCliente(cliente, categoria, precio) {
   if (cliente === "Recurrente" && categoria === "Alimentos" && precio > 3000) {
     return 100;
   }
-  if (cliente === "Especial" && categoria === "Electronicos" && precio > 4000) {
+  if (cliente === "Especial" && categoria === "Electrónicos" && precio > 4000) {
     return 200;
   }
   return 0;

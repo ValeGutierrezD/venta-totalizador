@@ -74,7 +74,7 @@ btnFinal.addEventListener("click", () => {
   const envioBase = calcularCostoEnvioBase(peso);
   const envioFinal = calcularEnvioConDescuento(envioBase, cliente);
 
-  const resultado = ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso);
+  const resultado = ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso, cliente);
   const totalFinal = resultado.totalFinal - envioBase + envioFinal;
 
   div_1.innerHTML += `

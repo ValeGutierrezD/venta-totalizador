@@ -156,6 +156,14 @@ describe("Totalizador de Ventas", () => {
   });
 
   it("debería aplicar $200 de descuento para cliente especial con electronicos y monto mayor a 4000", () => {
-    expect(ObtenerDescuentoEspecialCliente("Especial", "Electronicos", 4500)).toEqual(200);
+    expect(ObtenerDescuentoEspecialCliente("Especial", "Electrónicos", 4500)).toEqual(200);
+  });
+
+  it("no debería aplicar descuento especial si el cliente especial compra menos de 4000", () => {
+    expect(ObtenerDescuentoEspecialCliente("Especial", "Electrónicos", 3000)).toEqual(0);
+  });
+
+  it("no debería aplicar descuento especial si la categoria no es electronicos", () => {
+    expect(ObtenerDescuentoEspecialCliente("Especial", "Alimentos", 5000)).toEqual(0);
   });
 });
