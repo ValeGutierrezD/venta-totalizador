@@ -102,4 +102,7 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 3% de impuesto adicional para muebles", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Muebles")).toEqual("0.03");
   });
+  it("debería retornar 4% de impuesto adicional para electronicos", () => {
+    expect(ObtenerImpuestoAdicionalPorCategoria("Electronicos")).toEqual("0.04");
+  });
 });

@@ -402,9 +402,23 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fa1fca437991b5f00e1bcdb9a229767bac178eaf",
     "commitName": "feat: Mostrar impuesto para muebles",
     "commitTimestamp": 1773105052105,
     "testId": 19
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1773105095517,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para electronicos",
+    "commitTimestamp": 1773105124306,
+    "testId": 20
   }
 ]

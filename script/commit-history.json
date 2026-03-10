@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fa1fca437991b5f00e1bcdb9a229767bac178eaf",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:10:48.000Z",
       "message": "feat: Mostrar impuesto para muebles",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/fa1fca437991b5f00e1bcdb9a229767bac178eaf"
     },
     "stats": {
       "total": 3,
@@ -376,6 +376,25 @@
     },
     "coverage": 81.82,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:12:00.000Z",
+      "message": "feat: Mostrar impuesto para electronicos",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 86.36,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }
