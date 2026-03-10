@@ -151,3 +151,10 @@ export function ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso)
     };
 }
 
+export function ObtenerDescuentoCliente(tipoCliente) {
+  if(tipoCliente === "Normal") return 0;
+  if(tipoCliente === "Recurrente") return 0.005;
+  if(tipoCliente === "Antiguo Recurrente") return 0.01;
+  if(tipoCliente === "Especial") return 0.015;
+}
+

@@ -568,9 +568,55 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "df28d2524a8d5fc819b7ce08a89f4a661bc68388",
     "commitName": "refac: ventasPresenter",
     "commitTimestamp": 1773121362471,
     "testId": 32
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 7,
+    "numTotalTests": 37,
+    "timestamp": 1773121819711,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 7,
+    "numTotalTests": 37,
+    "timestamp": 1773121946984,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 6,
+    "numTotalTests": 38,
+    "timestamp": 1773121967740,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1773122036272,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1773122102472,
+    "success": true,
+    "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar descuento por cliente normal",
+    "commitTimestamp": 1773122444597,
+    "testId": 33
   }
 ]

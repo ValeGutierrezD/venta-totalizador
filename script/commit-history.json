@@ -608,12 +608,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "df28d2524a8d5fc819b7ce08a89f4a661bc68388",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T05:42:38.000Z",
       "message": "refac: ventasPresenter",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/df28d2524a8d5fc819b7ce08a89f4a661bc68388"
     },
     "stats": {
       "total": 32,
@@ -625,5 +625,24 @@
     "test_count": 37,
     "failed_tests": 7,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T06:00:40.000Z",
+      "message": "feat: mostrar descuento por cliente normal",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 20,
+      "deletions": 8,
+      "date": "2026-03-10"
+    },
+    "coverage": 69.88,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

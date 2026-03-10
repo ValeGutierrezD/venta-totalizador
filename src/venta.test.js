@@ -1,5 +1,5 @@
 import { 
-  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase} from "./venta.js";
+  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecio, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria, calcularCostoEnvioBase, ObtenerDescuentoCliente} from "./venta.js";
 describe("Totalizador de Ventas", () => {
   
   it("debería calcular el total bruto multiplicando cantidad y precio", () => {
@@ -50,23 +50,23 @@ describe("Totalizador de Ventas", () => {
 
   // Prueba para CalcularPrecioTotal con impuesto
   it("debería calcular precio total para CA: 60 + 4.95 = 64.95", () => {
-    expect(CalcularPrecioTotal(60, "CA")).toBeCloseTo(64.95, 2);
+    expect(CalcularPrecio(60, "CA")).toBeCloseTo(64.95, 2);
   });
 
   it("debería calcular precio total para AL: 60 + 2.40 = 62.40", () => {
-    expect(CalcularPrecioTotal(60, "AL")).toBeCloseTo(62.40, 2);
+    expect(CalcularPrecio(60, "AL")).toBeCloseTo(62.40, 2);
   });
 
   it("debería calcular precio total para UT: 60 + 3.99 = 63.99", () => {
-    expect(CalcularPrecioTotal(60, "UT")).toBeCloseTo(63.99, 2);
+    expect(CalcularPrecio(60, "UT")).toBeCloseTo(63.99, 2);
   });
 
   it("debería calcular precio total para NV: 60 + 4.80 = 64.80", () => {
-    expect(CalcularPrecioTotal(60, "NV")).toBeCloseTo(64.80, 2);
+    expect(CalcularPrecio(60, "NV")).toBeCloseTo(64.80, 2);
   });
 
   it("debería calcular precio total para TX: 60 + 3.75 = 63.75", () => {
-    expect(CalcularPrecioTotal(60, "TX")).toBeCloseTo(63.75, 2);
+    expect(CalcularPrecio(60, "TX")).toBeCloseTo(63.75, 2);
   });
 
   //pruebas para calcular descuentos
@@ -91,7 +91,7 @@ describe("Totalizador de Ventas", () => {
 
   // pruebas para impuestos adicionales
   it("debería retornar 7% de impuesto adicional para bebidas alcoholicas", () => {
-    expect(ObtenerImpuestoAdicionalPorCategoria("Bebidas alcoholicas")).toEqual("0.07");
+    expect(ObtenerImpuestoAdicionalPorCategoria("Bebidas alcohólicas")).toEqual("0.07");
   });
   it("debería retornar 0% de impuesto adicional para alimentos", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Alimentos")).toEqual("0");
@@ -103,7 +103,7 @@ describe("Totalizador de Ventas", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Muebles")).toEqual("0.03");
   });
   it("debería retornar 4% de impuesto adicional para electronicos", () => {
-    expect(ObtenerImpuestoAdicionalPorCategoria("Electronicos")).toEqual("0.04");
+    expect(ObtenerImpuestoAdicionalPorCategoria("Electrónicos")).toEqual("0.04");
   });
   it("debería retornar 0% de impuesto adicional para vestimenta", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Vestimenta")).toEqual("0.02");
@@ -133,5 +133,10 @@ describe("Totalizador de Ventas", () => {
   });
   it("debería costar $9 para un peso de 250", () => {
     expect(calcularCostoEnvioBase(250)).toEqual(9);
+  });
+
+  // pruebas para tipo de cilente
+  it("debería retornar 0% de descuento para cliente normal", () => {
+    expect(ObtenerDescuentoCliente("Normal")).toEqual(0);
   });
 });
