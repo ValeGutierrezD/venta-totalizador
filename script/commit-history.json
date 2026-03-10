@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "13df9927c6ba57b4ca7f7b0c09d009dc55fb0756",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:23:38.000Z",
       "message": "feat: Mostrar costo de envio 0-10",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/13df9927c6ba57b4ca7f7b0c09d009dc55fb0756"
     },
     "stats": {
       "total": 32,
@@ -452,6 +452,25 @@
     },
     "coverage": 75.86,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:25:52.000Z",
+      "message": "feat: Mostrar costo de envio 11-20",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 79.31,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }

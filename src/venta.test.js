@@ -116,4 +116,7 @@ describe("Totalizador de Ventas", () => {
   it("debería costar $0 para un peso de 5", () => {
     expect(calcularCostoEnvioBase(5)).toEqual(0);
   });
+  it("debería costar $3.50 para un peso de 15", () => {
+    expect(calcularCostoEnvioBase(15)).toEqual(3.50);
+  });
 });
