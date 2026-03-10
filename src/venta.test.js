@@ -1,5 +1,5 @@
 import { 
-  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento} from "./venta.js";
+  MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria} from "./venta.js";
 describe("Totalizador de Ventas", () => {
   
   it("debería calcular el total bruto multiplicando cantidad y precio", () => {
@@ -89,4 +89,8 @@ describe("Totalizador de Ventas", () => {
     expect(ObtenerPorcentajeDescuento(30000)).toEqual("15%");
   });
 
+  // pruebas para impuestos adicionales
+  it("debería retornar 7% de impuesto adicional para bebidas alcoholicas", () => {
+    expect(ObtenerImpuestoAdicionalPorCategoria("Bebidas alcoholicas")).toEqual("0.07");
+  });
 });

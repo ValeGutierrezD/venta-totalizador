@@ -330,9 +330,31 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab9e386bcc851026dd81f75d5ca1c053e6fadf86",
     "commitName": "style: mejora de lista de estados",
     "commitTimestamp": 1773103377005,
     "testId": 15
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1773103791617,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1773104269203,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para bebidas alcoholicas",
+    "commitTimestamp": 1773104650233,
+    "testId": 16
   }
 ]

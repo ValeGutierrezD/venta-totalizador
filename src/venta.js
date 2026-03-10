@@ -37,6 +37,7 @@ function CalcularImpuesto(precioNeto, estado) {
 function CalcularPrecioTotal(precioNeto, estado) {
   return precioNeto + CalcularImpuesto(precioNeto, estado);
 }
+
 function ObtenerPorcentajeDescuento(precioTotal) {
   if (precioTotal >= 30000) {
     return "15%";
@@ -58,4 +59,29 @@ function ObtenerPorcentajeDescuento(precioTotal) {
   }  
 }
 
-export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento};
+function ObtenerImpuestoAdicionalPorCategoria(categoria) {
+  if (categoria === "Alimentos") {
+    return "0.07"; 
+  }
+  if (categoria === "Bebidas alcoholicas") {
+    return "0.07"; 
+  }
+  if (categoria === "Material de escritorio") {
+    return "0"; 
+  }
+  if (categoria === "Muebles") {
+    return "0.03"; 
+  }
+  if (categoria === "Electronicos") {
+    return "0.04"; 
+  }
+  if (categoria === "Vestimenta") {
+    return "0.02"; 
+  }
+  if (categoria === "Varios") {
+    return "0"; 
+  }
+}
+
+
+export {MostrarCantidad, MostrarPrecio, MostrarPrecioNeto, MostrarPorcentajeImpuesto, CalcularImpuesto, CalcularPrecioTotal, ObtenerPorcentajeDescuento, ObtenerImpuestoAdicionalPorCategoria};
