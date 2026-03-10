@@ -139,4 +139,7 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 0% de descuento para cliente normal", () => {
     expect(ObtenerDescuentoCliente("Normal")).toEqual(0);
   });
+  it("debería retornar 0.5% de descuento para cliente recurrente", () => {
+    expect(ObtenerDescuentoCliente("Recurrente")).toEqual(0.005);
+  });
 });

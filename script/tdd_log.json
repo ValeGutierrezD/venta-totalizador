@@ -614,9 +614,23 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "12d14dca44f9b8eb4e4bd94e2fcc34ff04c697d1",
     "commitName": "feat: mostrar descuento por cliente normal",
     "commitTimestamp": 1773122444597,
     "testId": 33
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1773122539966,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar descuento por cliente recurrente",
+    "commitTimestamp": 1773122560915,
+    "testId": 34
   }
 ]
