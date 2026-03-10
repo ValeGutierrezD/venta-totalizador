@@ -96,4 +96,7 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 0% de impuesto adicional para alimentos", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Alimentos")).toEqual("0");
   });
+  it("debería retornar 0% de impuesto adicional para material de escritorio", () => {
+    expect(ObtenerImpuestoAdicionalPorCategoria("Material de escritorio")).toEqual("0");
+  });
 });

@@ -374,9 +374,23 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bac12394c21700c9c573ccff0538be91361ca478",
     "commitName": "feat: Mostrar impuesto para alimentos",
     "commitTimestamp": 1773104892911,
     "testId": 17
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1773104931130,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para material de escritorio",
+    "commitTimestamp": 1773104978614,
+    "testId": 18
   }
 ]

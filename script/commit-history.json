@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bac12394c21700c9c573ccff0538be91361ca478",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:08:09.000Z",
       "message": "feat: Mostrar impuesto para alimentos",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/bac12394c21700c9c573ccff0538be91361ca478"
     },
     "stats": {
       "total": 5,
@@ -338,6 +338,25 @@
     },
     "coverage": 72.73,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:09:35.000Z",
+      "message": "feat: Mostrar impuesto para material de escritorio",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 77.27,
+    "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
   }
