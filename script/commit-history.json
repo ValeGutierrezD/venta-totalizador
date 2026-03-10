@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2562fb6387bc3a1b96fa82394684a88db421d80a",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:12:00.000Z",
       "message": "feat: Mostrar impuesto para electronicos",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/2562fb6387bc3a1b96fa82394684a88db421d80a"
     },
     "stats": {
       "total": 3,
@@ -395,6 +395,25 @@
     },
     "coverage": 86.36,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:13:17.000Z",
+      "message": "feat: Mostrar impuesto para vestimenta",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-03-10"
+    },
+    "coverage": 90.91,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

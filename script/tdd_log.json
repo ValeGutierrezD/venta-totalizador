@@ -416,9 +416,23 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2562fb6387bc3a1b96fa82394684a88db421d80a",
     "commitName": "feat: Mostrar impuesto para electronicos",
     "commitTimestamp": 1773105124306,
     "testId": 20
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1773105178304,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para vestimenta",
+    "commitTimestamp": 1773105200369,
+    "testId": 21
   }
 ]
