@@ -81,13 +81,23 @@ btnFinal.addEventListener("click", () => {
   );
 
   div_1.innerHTML += `
-    <hr>
-    <p><strong>Categoría:</strong> ${categoria}</p>
-    <p><strong>Tipo de cliente:</strong> ${cliente}</p>
-    <p><strong>Impuesto categoría:</strong> $${resultado.impCategoria.toFixed(2)}</p>
-    <p><strong>Costo envío:</strong> $${resultado.envio.toFixed(2)}</p>
-    <p><strong>Descuento especial:</strong> $${resultado.descuentoEspecial.toFixed(2)}</p>
+  <hr>
 
-    <h2>TOTAL FINAL: $${resultado.totalFinal.toFixed(2)}</h2>
+  <p><strong>Categoría:</strong> ${categoria}</p>
+  <p><strong>Tipo de cliente:</strong> ${cliente}</p>
+
+  <p><strong>Impuesto categoría:</strong> $${resultado.impCategoria.toFixed(2)}</p>
+  <p><strong>Descuento por monto:</strong> $${resultado.montoDesc.toFixed(2)}</p>
+  <p><strong>Descuento especial:</strong> $${resultado.descuentoEspecial.toFixed(2)}</p>
+  <p><strong>Costo envío:</strong> $${resultado.envio.toFixed(2)}</p>
+
+  <h2>TOTAL FINAL: $${resultado.totalFinal.toFixed(2)}</h2>
   `;
+});
+
+const btnLimpiar = document.querySelector("#btn-limpiar");
+
+btnLimpiar.addEventListener("click", () => {
+  document.querySelector("#ventas-form").reset();
+  div_1.innerHTML = "";
 });
