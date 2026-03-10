@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5eb3ed70d85368d50c6d0e35d75e11b96cf5fa65",
     "author": "Valeria Gutierrez",
     "commit": {
       "date": "2026-03-10T01:04:06.000Z",
       "message": "feat: Mostrar impuesto para bebidas alcoholicas",
-      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/5eb3ed70d85368d50c6d0e35d75e11b96cf5fa65"
     },
     "stats": {
       "total": 34,
@@ -319,6 +319,25 @@
     },
     "coverage": 70.45,
     "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Valeria Gutierrez",
+    "commit": {
+      "date": "2026-03-10T01:08:09.000Z",
+      "message": "feat: Mostrar impuesto para alimentos",
+      "url": "https://github.com/ValeGutierrezD/venta-totalizador/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 72.73,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }

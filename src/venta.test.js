@@ -93,4 +93,7 @@ describe("Totalizador de Ventas", () => {
   it("debería retornar 7% de impuesto adicional para bebidas alcoholicas", () => {
     expect(ObtenerImpuestoAdicionalPorCategoria("Bebidas alcoholicas")).toEqual("0.07");
   });
+  it("debería retornar 0% de impuesto adicional para alimentos", () => {
+    expect(ObtenerImpuestoAdicionalPorCategoria("Alimentos")).toEqual("0");
+  });
 });

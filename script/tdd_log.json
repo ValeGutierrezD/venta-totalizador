@@ -352,9 +352,31 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5eb3ed70d85368d50c6d0e35d75e11b96cf5fa65",
     "commitName": "feat: Mostrar impuesto para bebidas alcoholicas",
     "commitTimestamp": 1773104650233,
     "testId": 16
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1773104716653,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1773104871323,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar impuesto para alimentos",
+    "commitTimestamp": 1773104892911,
+    "testId": 17
   }
 ]

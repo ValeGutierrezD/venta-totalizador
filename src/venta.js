@@ -61,7 +61,7 @@ function ObtenerPorcentajeDescuento(precioTotal) {
 
 function ObtenerImpuestoAdicionalPorCategoria(categoria) {
   if (categoria === "Alimentos") {
-    return "0.07"; 
+    return "0"; 
   }
   if (categoria === "Bebidas alcoholicas") {
     return "0.07"; 
