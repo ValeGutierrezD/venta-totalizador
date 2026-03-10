@@ -71,11 +71,14 @@ btnFinal.addEventListener("click", () => {
   const { cantidad, precio, estado, categoria, peso } = obtenerDatosFormulario();
   const cliente = clienteInput.value;
 
-  const envioBase = calcularCostoEnvioBase(peso);
-  const envioFinal = calcularEnvioConDescuento(envioBase, cliente);
-
-  const resultado = ProcesarVentaCompleta(cantidad, precio, estado, categoria, peso, cliente);
-  const totalFinal = resultado.totalFinal - envioBase + envioFinal;
+  const resultado = ProcesarVentaCompleta(
+    cantidad,
+    precio,
+    estado,
+    categoria,
+    peso,
+    cliente
+  );
 
   div_1.innerHTML += `
     <hr>
@@ -83,8 +86,8 @@ btnFinal.addEventListener("click", () => {
     <p><strong>Tipo de cliente:</strong> ${cliente}</p>
     <p><strong>Impuesto categoría:</strong> $${resultado.impCategoria.toFixed(2)}</p>
     <p><strong>Costo envío:</strong> $${resultado.envio.toFixed(2)}</p>
-    <p><strong>Envío con descuento cliente:</strong> $${envioFinal.toFixed(2)}</p>
-    <h2>TOTAL FINAL: $${totalFinal.toFixed(2)}</h2>
-    
+    <p><strong>Descuento especial:</strong> $${resultado.descuentoEspecial.toFixed(2)}</p>
+
+    <h2>TOTAL FINAL: $${resultado.totalFinal.toFixed(2)}</h2>
   `;
 });
